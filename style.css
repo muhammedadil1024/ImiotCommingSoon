@@ -1,0 +1,246 @@
+/* importing fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Poppins&display=swap');
+
+@font-face {
+    font-family: Betterlett;
+    src: url(Assets/fonts/Betterlett.otf);
+}
+
+/* Element selectors */
+
+body {
+    background-color: #180A25;
+    margin: 0;
+    height: 100vh;
+}
+
+input {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    line-height: 30px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+}
+
+button {
+    transition: background 0.3s linear;
+    position: relative;
+    color: #FFFFFF;
+    width: 140px;
+    height: 42px;
+    background: linear-gradient(90deg, rgba(64, 230, 245, 0.3) 0%, rgba(79, 86, 254, 0.3) 100%);
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgba(255, 1, 146, 0.3) 0%, rgba(138, 27, 246, 0.3) 100%);
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    color: #FFFFFF;
+}
+
+
+/* class selectors */
+
+.frame-1 {
+    width: 403px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.head-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.for-logo {
+    background-color: #180A25;
+    position: absolute;
+    text-align: center;
+    top: 263px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 129px;
+}
+
+.imiot-logo {
+    width: 80%;
+}
+
+.headings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Betterlett', sans-serif;
+    margin: auto;
+}
+
+.h-one {
+    background: linear-gradient(90deg, #40E6F5 -4.6%, #4F56FE 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 55px;
+    margin-right: 4rem;
+
+}
+
+.h-two {
+    background: linear-gradient(90deg, #E50384 0%, #8A1BF6 109.75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 55px;
+    margin-right: 3rem;
+}
+
+.h-three {
+    background: linear-gradient(90deg, #FEBBBB 5.25%, #BA308B 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 55px;
+    margin-left: 1rem;
+}
+
+.plain-texts {
+    text-align: center;
+}
+
+.text-exo {
+    font-family: 'Exo', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: -10px;
+}
+
+.storie-text {
+    background: linear-gradient(90deg, #8A1BF7 42.25%, #F94612 56.75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    margin: 0px;
+    margin-top: 6px;
+}
+
+.inpt-sec {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.footer-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-txt {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Exo', sans-serif;
+    margin-bottom: -10px;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .head-container {
+        width: 100%;
+    }
+
+    .frame-1 {
+        width: 250px;
+        margin: auto;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .for-logo {
+        width: 50px;
+        top: 166px;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+    }
+
+    .headings {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h-one {
+        font-size: 25px;
+        margin-right: 0;
+        margin-top: 2rem;
+        
+    }
+
+    .h-two {
+        font-size: 25px;
+        margin-right: 0;
+        
+    }
+
+    .h-three {
+        font-size: 25px;
+        margin-left: 0;
+        margin-bottom: 2rem;
+        
+    }
+
+    .text-exo {
+        font-size: 10px;
+    }
+
+    .storie-text {
+        font-size: 13px;
+    }
+
+    .inpt-sec {
+        width: 90%;
+        margin: auto;
+    }
+    
+    input {
+        font-size: 10px;
+        height: 35px;
+        margin-top: 1rem;
+    }
+
+    input::placeholder {
+        font-size: 11px;
+    }
+
+    button {
+        font-size: 12px;
+        height: 35px;
+        margin-top: 1rem;
+    }
+
+    .footer-txt {
+        font-size: 10px;
+    }
+
+    .main-logo {
+        width: 80px;
+    }
+
+}
